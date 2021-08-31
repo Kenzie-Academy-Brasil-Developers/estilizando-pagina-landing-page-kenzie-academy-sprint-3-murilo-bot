@@ -188,6 +188,7 @@ main .secaoContato{
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 5px;
     background-color: #f6f6f6;
 }
 main .secaoContato .flex{
