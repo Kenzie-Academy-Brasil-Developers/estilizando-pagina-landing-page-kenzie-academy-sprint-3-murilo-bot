@@ -29,49 +29,224 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --conteudo-color: #FFFFFF;
+    --titulo-color: #303030;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     list-style: none;
 }
+
 img{
-    max-width: 800px;
+    max-width: 200px;
+    height: auto;
 }
+
+.inicial{
+    width: 100%;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.menu_navegacao{
+    display: flex;
+    justify-content: flex-end;
+    visibility: hidden;    
+}
+
+.menu_hamburguer img{    
+    width: 50px;
+    height: 50px;
+    
+}
+
+figcaption{
+    visibility: hidden
+}
+
+.secaoDestaque { 
+    width: 100%;      
+    align-items: center;
+    text-align: center;
+    background-color: #00043e;
+}
+
+.secaoDestaqueFormulario{ 
+    padding-bottom: 120px;
+}
+
+.input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 20px;
+}
+
+
+.colorButton{
+    background-color: #007aff;
+    border: none; 
+    height: 20px;  
+    margin-right: 15px;
+    margin-left: -5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.conteudoHeader{ 
+       
+    color: var(--conteudo-color);
+    background-color: #00043e;
+    font-weight: 500;
+
+}
+
+.secaoSobre{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloColor{
+    color: var(--titulo-color);
+    text-align: left;
+    font-weight: 600;
+}
+
+.conteudo{
+    width: 100%;
+    color: #303030;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.conteudo2{
+    color: #818181;
+    text-align: left;
+    font-size: 16px;    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.buttonSubscribe{
+    width: 250px;
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+    border: 0.5px solid #818181;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flex-col{
+    width: 100%;   
+}
+
+.flex-col:nth-child(2){
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.js figure img{
+    width: 110px;
+    height: 110px;
+}
+.list ul{
+    
+    width: 60%;
+    margin: auto;
+    }
+
+.list ul li{
+    list-style: square;
+    color: #818181;
+    text-align: left;
+}
+
+.list h2 {    
+    margin: 20px 0px;
+}
+
+.js, .list{
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: 15px 0px;
+}
+
 div.flex{
     display: flex;
 }
+
 div.full-container{
-    width: 100%;
-    max-width: 1850px;
+    width: 100%;    
     margin:0 auto;
 }
 div.large-container{
-    width: 100%;
-    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;    
     margin:0 auto;
 }
+
+
 div.container{
-    width: 100%;
-    max-width: 1140px;
+    width: 100%;    
     margin:0 auto;
 }
 /* GERAL */
   
 /* HTML */
-html{}
+html{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Montserrat';
+}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    width: 100%;
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    background-color: #00043e;  
+}
 /* HEADER */
   
 /* FOOTER */
@@ -97,7 +272,26 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+        
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {       
+       div.container {
+           border: 1px solid red;          
+           display: flex;
+           flex-direction: row;
+           width: 80vw;                     
+       }
+
+       .menu_navegacao{
+        display: flex;
+        justify-content: flex-end;
+        display: none;   
+    }
+
+       
+
+
+    }
 /* MEDIA QUERIES */
