@@ -1,3 +1,40 @@
+
+/*
+Theme Name: Landing Page Kenzie Academy
+Theme URI: https://kenzie.com.br/
+Author: Kenzie Academy 
+Author URI: https://kenzie.com.br/
+Description: Descrção do thema.
+Version: 1.0
+Text Domain: https://kenzie.com.br/
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+
+family=Montserrat -> Menus
+family=Lato -> Títulos, textos
+*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONTS */
+
+/* VARIÁVEIS */
+:root{
+    --conteudo-color: #FFFFFF;
+    --titulo-color: #303030;
+}
+  
+/* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
@@ -5,63 +42,89 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: 'Lato', sans-serif;
     list-style: none;
 }
+
 div.flex{
     display: flex;
-    flex-direction: column;
 }
+
 div.full-container{
-    width: 100%;
+    width: 100%;    
     margin:0 auto;
 }
 div.large-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 100%;    
     margin:0 auto;
 }
+
 div.container{
-    width: 100%;
+    width: 100%;    
     margin:0 auto;
-}
+} 
+  
+/* HTML */
 html{
     width: 100%;
     text-align: center;
     margin: 0;
 }
+
 h2{
     font-family: 'Montserrat';
 }
+/* HTML */
+  
+/* BODY */
 body{
     width: 100%;
-    font-family: 'Lato';
 }
+/* BODY */
+  
+/* HEADER */
+header{
+    background-color: #00043e;  
+}
+/* HEADER */
+  
+/* FOOTER */
+footer{}
+/* FOOTER */
+
+/* INICIAL */
+main{}
+/* INICIAL */
+
+
 header{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #00043E;
+    background-image: url(../img/background-destaque.webp);
 }
-header .large-container figure{
-    text-align: left;
-}
-header .large-container figure img{
-    width: 40%;
-    height: 40%;
-}
-header div nav figure .menu-hamburguer{  
-    width: 40%;
-    height: 40%;
-}
-header .large-container nav{    
-    width: 20%;
+header .large-container nav{
+    width: 30%;
 }
 header .large-container nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
+    justify-content: space-around;
     visibility: hidden;
+}
+header .large-container nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+header .large-container nav ul li a{
+    text-decoration: none;
+    color: #818181;
+}
+header .large-container nav ul li a:hover{
+    color: red;
 }
 header .secaoDestaque{
     width: 100%;
@@ -69,17 +132,22 @@ header .secaoDestaque{
     text-align: center;
     margin-bottom: 30px;
 }
-header .secaoDestaque h2{    
+header .secaoDestaque h2{
     margin: 10px 0px;
 }
-header .secaoDestaque p{    
+header .secaoDestaque p{
     margin-bottom: 10px;
+}
+header div nav figure .menu-hamburguer{
+    width: 40%;
+    height: 40%;
 }
 .secaoDestaqueFormulario input{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     margin-right: -6px;
-    padding-left: 5px;
+    padding: 2px 0px 2px 0px;
+    padding-left: 4px;
     border: none;
 }
 .secaoDestaqueFormulario button{
@@ -87,11 +155,8 @@ header .secaoDestaque p{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     border: none;
-    background-color: #007aff;
-}
-main{
-    width: 100%;
-    margin: auto;
+    padding: 3px;
+    background-color: #007AFF;
 }
 main .secaoSobre{
     width: 70%;
@@ -102,21 +167,6 @@ main .secaoSobre .flex{
 }
 main .secaoSobre .flex h2{
     padding-bottom: 30px;
-    color: #4b4b4b;
-}
-main .secaoSobre .flex p{
-    padding-bottom: 30px;
-    color: #4b4b4b;
-    font-weight: 500;
-}
-main .secaoSobre .flex p:nth-child(3){
-    padding-bottom: 30px;    
-    color: #818181;
-    font-weight: 500;
-}
-main .python .flex-col .button button{
-    background-color: #FFFFFF;
-    border: 1px solid #818181;
 }
 main .secaoSobre .flex .python .flex-col h2, main .secaoSobre .flex .python .flex-col p{
     text-align: left;
@@ -133,8 +183,13 @@ main .secaoSobre .flex .python .image figure img{
     width: 40%;
     margin: 30px 0px;
 }
+main .secaoSobre .flex .python .flex-col p:nth-child(3){
+    padding-bottom: 30px;
+    color: #818181;
+    font-weight: 500;
+}
 main .secaoSobre .flex .javascript{
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding: 40px 0px;
     width: 100%;
     margin-top: 20px;
@@ -151,26 +206,100 @@ main .secaoSobre .flex .javascript .lista ul{
     list-style-position: inside;
     list-style: square;
 }
+main .secaoSobre .flex .javascript .lista ul li{
+    color: #818181;
+}
 figcaption{
     visibility: hidden;
 }
 
-footer{
-    text-align: center;
+/*
+Theme Name: Landing Page Kenzie Academy
+Theme URI: https://kenzie.com.br/
+Author: Kenzie Academy 
+Author URI: https://kenzie.com.br/
+Description: Descrção do thema.
+Version: 1.0
+Text Domain: https://kenzie.com.br/
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+
+family=Montserrat -> Menus
+family=Lato -> Títulos, textos
+*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONTS */
+
+/* VARIÁVEIS */
+:root{}
+  
+/* GERAL */
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
 }
-    @media screen and (min-width: 400px) {
-    }
-    @media screen and (min-width: 800px) {
-        header div nav ul li{
-            font-size: 13px;            
-        }
-        header section .secaoDestaque h2{
-            font-size: 63px;
-        }
-        header section .secaoDestaque p{
-            font-size: 21px;
-        }
-      
+img{
+    max-width: 800px;
+}
+div.flex{
+    display: flex;
+    flex-direction: column;
+}
+div.full-container{
+    width: 100%;
+    max-width: 1850px;
+    margin:0 auto;
+}
+div.large-container{
+    width: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+}
+div.container{
+    width: 100%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+/* GERAL */
+  
+/* HTML */
+html{}
+/* HTML */
+  
+/* BODY */
+body{}
+/* BODY */
+  
+/* HEADER */
+header{}
+/* HEADER */
+  
+/* FOOTER */
+footer{}
+/* FOOTER */
+
+/* INICIAL */
+main{
+
+}
+/* INICIAL */
+
+
 /* CURSOS */
 main .secaoCursos{
     width: 100%;
@@ -180,20 +309,24 @@ main .secaoCursos{
 }
 main .secaoCursos ul li h3{
     font-size: 19px;
+    color: #303030;
 }
 main .secaoCursos ul li p{
     font-size: 15px;
+    color: #818181;
 }
 main .secaoCursos article{
     margin: 50px 0px;
 }
 main .secaoCursos article p{
     margin: 25px 0px;
+    color: #303030;
 }
 main .secaoCursos ul li img{
     width: 10%;
 }
 /* CURSOS */
+
 
 
 /* CALENDÁRIO */
@@ -221,6 +354,9 @@ main .secaoCalendar ul li{
     display: flex;
     flex-direction: column;
 }
+main .secaoCalendar p{
+    color: #303030;
+}
 main .secaoCalendar ul li .calendario-data{
     background-color: #00043e;
     color: white;
@@ -228,11 +364,13 @@ main .secaoCalendar ul li .calendario-data{
 }
 main .secaoCalendar ul li h3{
     font-size: 19px;
+    color: #303030;
 }
 main .secaoCalendar ul li .text{
     height: 400px;
     margin-bottom: 10px;
     border-bottom: 1px solid black;
+    color: #818181;
 }
 main .secaoCalendar ul li p{
     margin: 0px;
@@ -263,7 +401,13 @@ main .secaoCalendar ul li .calendario-data-rodape button{
     border: none;
     font-size: 32px;
 }
+
+main .calendario-data-rodape{
+    font-size: 30px;
+    color: #818181;
+}
 /* CALENDÁRIO */
+
 
 /* CONTATO */ 
 main .secaoContato{
@@ -271,6 +415,7 @@ main .secaoContato{
     flex-direction: column;
     width: 100%;
     padding: 5px;
+    text-align: left;
     background-color: #f6f6f6;
 }
 main .secaoContato .flex{
@@ -300,6 +445,13 @@ main .secaoContato .flex .flex-col form .form-input-model{
 main .secaoContato .flex .flex-col form input{
     padding: 10px;
 }
+main .secaoContanto h2{
+    color: #303030;
+}
+main .secaoContato .flex .box .flex-col .secaoContato-informacoes, main .secaoContato .flex .box .flex-col .secaoContato-informacoes ul li a{
+    color: #818181;
+    text-decoration: none;
+}
 #mensagem{
     padding: 10px;
 }
@@ -309,35 +461,39 @@ footer{
 }
 /* CONTATO */ 
 
-main .secaoSobre .flex .python {
-    display: flex;
-    flex-direction: row;
-}
-main .secaoSobre .flex .python .image figure img{
-    width: 300px;
-}
-main .secaoSobre .flex .javascript{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-main .secaoSobre .flex .javascript .flex-col figure img{
-    width: 30%;
-}
-main .secaoSobre .flex .python .flex-col button{
-    width: 50%;
-}
-main .secaoSobre h2{
-    font-size: 24px;
-} 
-main .secaoSobre p{
-    font-size: 19px;
-}
-      
+/* para estilizar a scrollbar */
+::-webkit-scrollbar{}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+
+/* EXTRAS */
+
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {
+
+    @media screen and (min-width: 800px) {       
+        main .secaoSobre .flex .python {
+            display: flex;
+            flex-direction: row;
+        }
+        main .secaoSobre .flex .python .image figure img{
+            width: 300px;
+        }
+
+        main .secaoSobre .flex .javascript{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        main .secaoSobre .flex .javascript .flex-col figure img{
+            width: 30%;
+        }
+        main .secaoSobre .flex .python .flex-col button{
+            width: 50%;
+        }
         main .secaoCursos ul{
             width: 100%;
             display: flex;
@@ -351,6 +507,7 @@ main .secaoSobre p{
             width: 73px;
             height: 70px;
         }
+
         main .secaoCalendar ul{
             width: 100%;
             display: flex;
@@ -360,6 +517,22 @@ main .secaoSobre p{
         main .secaoCalendar ul li{
             width: 20%;
             display: flex;
+        }
+
+        main .secaoContato .box{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        header .large-container nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            visibility: visible;
+        }
+        header div nav figure .menu-hamburguer{
+            visibility: hidden;
         }
     }
 /* MEDIA QUERIES */
