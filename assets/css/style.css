@@ -1,46 +1,9 @@
-
-/*
-Theme Name: Landing Page Kenzie Academy
-Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
-Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
-Version: 1.0
-Text Domain: https://kenzie.com.br/
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
-family=Montserrat -> Menus
-family=Lato -> Títulos, textos
-*/
-
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* FONTS */
-
-/* VARIÁVEIS */
-:root{}
-  
-/* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     list-style: none;
-}
-img{
-    max-width: 800px;
 }
 div.flex{
     display: flex;
@@ -48,44 +11,166 @@ div.flex{
 }
 div.full-container{
     width: 100%;
-    max-width: 1850px;
     margin:0 auto;
 }
 div.large-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1170px;
     margin:0 auto;
 }
 div.container{
     width: 100%;
-    max-width: 1140px;
     margin:0 auto;
 }
-/* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
-
-/* INICIAL */
-main{
-
+html{
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
-/* INICIAL */
+h2{
+    font-family: 'Montserrat';
+}
+body{
+    width: 100%;
+    font-family: 'Lato';
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #00043E;
+}
+header .large-container figure{
+    text-align: left;
+}
+header .large-container figure img{
+    width: 40%;
+    height: 40%;
+}
+header div nav figure .menu-hamburguer{  
+    width: 40%;
+    height: 40%;
+}
+header .large-container nav{    
+    width: 20%;
+}
+header .large-container nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    visibility: hidden;
+}
+header .secaoDestaque{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+header .secaoDestaque h2{    
+    margin: 10px 0px;
+}
+header .secaoDestaque p{    
+    margin-bottom: 10px;
+}
+.secaoDestaqueFormulario input{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: -6px;
+    padding-left: 5px;
+    border: none;
+}
+.secaoDestaqueFormulario button{
+    color: #FFFFFF;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    background-color: #007aff;
+}
+main{
+    width: 100%;
+    margin: auto;
+}
+main .secaoSobre{
+    width: 70%;
+    margin: auto;
+}
+main .secaoSobre .flex{
+    padding: 30px 0px;
+}
+main .secaoSobre .flex h2{
+    padding-bottom: 30px;
+    color: #4b4b4b;
+}
+main .secaoSobre .flex p{
+    padding-bottom: 30px;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+main .secaoSobre .flex p:nth-child(3){
+    padding-bottom: 30px;    
+    color: #818181;
+    font-weight: 500;
+}
+main .python .flex-col .button button{
+    background-color: #FFFFFF;
+    border: 1px solid #818181;
+}
+main .secaoSobre .flex .python .flex-col h2, main .secaoSobre .flex .python .flex-col p{
+    text-align: left;
+    padding-bottom: 30px;
+}
+main .secaoSobre .flex .python .flex-col .button{
+    text-align: left;
+}
+main .secaoSobre .flex .python .flex-col button{
+    width: 70%;
+    height: 50px;
+}
+main .secaoSobre .flex .python .image figure img{
+    width: 40%;
+    margin: 30px 0px;
+}
+main .secaoSobre .flex .javascript{
+    background-color: #F6F6F6;
+    padding: 40px 0px;
+    width: 100%;
+    margin-top: 20px;
+}
+main .secaoSobre .flex .javascript .flex-col figure img{
+    width: 15%;
+}
+main .secaoSobre .flex .javascript .lista ul{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-position: inside;
+    list-style: square;
+}
+figcaption{
+    visibility: hidden;
+}
 
-
+footer{
+    text-align: center;
+}
+    @media screen and (min-width: 400px) {
+    }
+    @media screen and (min-width: 800px) {
+        header div nav ul li{
+            font-size: 13px;            
+        }
+        header section .secaoDestaque h2{
+            font-size: 63px;
+        }
+        header section .secaoDestaque p{
+            font-size: 21px;
+        }
+      
 /* CURSOS */
 main .secaoCursos{
     width: 100%;
@@ -109,7 +194,6 @@ main .secaoCursos ul li img{
     width: 10%;
 }
 /* CURSOS */
-
 
 
 /* CALENDÁRIO */
@@ -181,8 +265,6 @@ main .secaoCalendar ul li .calendario-data-rodape button{
 }
 /* CALENDÁRIO */
 
-
-
 /* CONTATO */ 
 main .secaoContato{
     display: flex;
@@ -227,18 +309,31 @@ footer{
 }
 /* CONTATO */ 
 
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
-
+main .secaoSobre .flex .python {
+    display: flex;
+    flex-direction: row;
+}
+main .secaoSobre .flex .python .image figure img{
+    width: 300px;
+}
+main .secaoSobre .flex .javascript{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .secaoSobre .flex .javascript .flex-col figure img{
+    width: 30%;
+}
+main .secaoSobre .flex .python .flex-col button{
+    width: 50%;
+}
+main .secaoSobre h2{
+    font-size: 24px;
+} 
+main .secaoSobre p{
+    font-size: 19px;
+}
+      
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
@@ -256,7 +351,6 @@ footer{
             width: 73px;
             height: 70px;
         }
-
         main .secaoCalendar ul{
             width: 100%;
             display: flex;
