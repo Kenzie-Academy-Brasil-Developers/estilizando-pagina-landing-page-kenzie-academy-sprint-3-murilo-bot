@@ -7,6 +7,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 div.flex{
     display: flex;
+    flex-direction: column;
 }
 div.full-container{
     width: 100%;
@@ -36,30 +37,23 @@ body{
     font-family: 'Lato';
 }
 header{
-    background-color: #00043E;
-}
-header{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: #00043E;
 }
-
 header .large-container figure{
     text-align: left;
 }
-
 header .large-container figure img{
     width: 40%;
     height: 40%;
 }
-
 header div nav figure .menu-hamburguer{  
-    
     width: 40%;
     height: 40%;
 }
-
 header .large-container nav{    
     width: 20%;
 }
@@ -77,11 +71,9 @@ header .secaoDestaque{
 }
 header .secaoDestaque h2{    
     margin: 10px 0px;
-    
 }
 header .secaoDestaque p{    
     margin-bottom: 10px;
-    
 }
 .secaoDestaqueFormulario input{
     border-bottom-left-radius: 5px;
@@ -90,7 +82,6 @@ header .secaoDestaque p{
     padding-left: 5px;
     border: none;
 }
-
 .secaoDestaqueFormulario button{
     color: #FFFFFF;
     border-bottom-right-radius: 5px;
@@ -98,12 +89,10 @@ header .secaoDestaque p{
     border: none;
     background-color: #007aff;
 }
-
 main{
     width: 100%;
     margin: auto;
 }
-
 main .secaoSobre{
     width: 70%;
     margin: auto;
@@ -125,12 +114,10 @@ main .secaoSobre .flex p:nth-child(3){
     color: #818181;
     font-weight: 500;
 }
-
 main .python .flex-col .button button{
     background-color: #FFFFFF;
     border: 1px solid #818181;
 }
-
 main .secaoSobre .flex .python .flex-col h2, main .secaoSobre .flex .python .flex-col p{
     text-align: left;
     padding-bottom: 30px;
@@ -177,41 +164,202 @@ footer{
         header div nav ul li{
             font-size: 13px;            
         }
-
         header section .secaoDestaque h2{
             font-size: 63px;
-        
         }
-
         header section .secaoDestaque p{
             font-size: 21px;
-        
         }
+      
+/* CURSOS */
+main .secaoCursos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main .secaoCursos ul li h3{
+    font-size: 19px;
+}
+main .secaoCursos ul li p{
+    font-size: 15px;
+}
+main .secaoCursos article{
+    margin: 50px 0px;
+}
+main .secaoCursos article p{
+    margin: 25px 0px;
+}
+main .secaoCursos ul li img{
+    width: 10%;
+}
+/* CURSOS */
 
-        main .secaoSobre .flex .python {
+
+/* CALENDÁRIO */
+main .secaoCalendar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main .secaoCalendar h2{
+    margin-top: 30px;
+}
+main .secaoCalendar p{
+    margin: 30px 0px;
+}
+main .secaoCalendar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+main .secaoCalendar ul li{
+    border: 2px solid black;
+    margin: 15px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+main .secaoCalendar ul li .calendario-data{
+    background-color: #00043e;
+    color: white;
+    font-size: 36px;
+}
+main .secaoCalendar ul li h3{
+    font-size: 19px;
+}
+main .secaoCalendar ul li .text{
+    height: 400px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+main .secaoCalendar ul li p{
+    margin: 0px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main .secaoCalendar ul li h3{
+    margin-top: 15px;
+}
+main .secaoCalendar ul li .calendario-data-rodape{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+main .secaoCalendar ul li .calendario-data-rodape span{
+    margin: 20px 0px;
+}
+main .secaoCalendar ul li .calendario-data-rodape button{
+    background-color: #007aff;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin: 30px 0px;
+    border: none;
+    font-size: 32px;
+}
+/* CALENDÁRIO */
+
+/* CONTATO */ 
+main .secaoContato{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    background-color: #f6f6f6;
+}
+main .secaoContato .flex{
+    display: flex;
+    align-items: center;
+}
+main .secaoContato .flex h2{
+    margin: 30px 0px;
+}
+main .secaoContato .flex .flex-col ul li{
+    margin: 10px 0px;
+}
+main .secaoContato .flex .flex-col form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+main .secaoContato .flex .flex-col form .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+main .secaoContato .flex .flex-col form .form-input-model{
+    margin-top: 5px;
+}
+main .secaoContato .flex .flex-col form input{
+    padding: 10px;
+}
+#mensagem{
+    padding: 10px;
+}
+footer{
+    margin-top: 15px;
+    text-align: center;
+}
+/* CONTATO */ 
+
+main .secaoSobre .flex .python {
+    display: flex;
+    flex-direction: row;
+}
+main .secaoSobre .flex .python .image figure img{
+    width: 300px;
+}
+main .secaoSobre .flex .javascript{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .secaoSobre .flex .javascript .flex-col figure img{
+    width: 30%;
+}
+main .secaoSobre .flex .python .flex-col button{
+    width: 50%;
+}
+main .secaoSobre h2{
+    font-size: 24px;
+} 
+main .secaoSobre p{
+    font-size: 19px;
+}
+      
+/* MEDIA QUERIES */
+    @media screen and (min-width: 400px) {}
+  
+    @media screen and (min-width: 800px) {
+        main .secaoCursos ul{
+            width: 100%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
         }
-        main .secaoSobre .flex .python .image figure img{
-            width: 300px;
+        main .secaoCursos ul li{
+            width: 33%;
         }
-        main .secaoSobre .flex .javascript{
+        main .secaoCursos ul li img{
+            width: 73px;
+            height: 70px;
+        }
+        main .secaoCalendar ul{
+            width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
         }
-        main .secaoSobre .flex .javascript .flex-col figure img{
-            width: 30%;
-        }
-        main .secaoSobre .flex .python .flex-col button{
-            width: 50%;
-        }
-
-        main .secaoSobre h2{
-            font-size: 24px;
-        }
-
-        main .secaoSobre p{
-            font-size: 19px;
+        main .secaoCalendar ul li{
+            width: 20%;
+            display: flex;
         }
     }
+/* MEDIA QUERIES */
