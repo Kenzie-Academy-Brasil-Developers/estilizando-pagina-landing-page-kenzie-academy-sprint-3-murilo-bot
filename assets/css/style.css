@@ -1,40 +1,3 @@
-
-/*
-Theme Name: Landing Page Kenzie Academy
-Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
-Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
-Version: 1.0
-Text Domain: https://kenzie.com.br/
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
-family=Montserrat -> Menus
-family=Lato -> Títulos, textos
-*/
-
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* FONTS */
-
-/* VARIÁVEIS */
-:root{
-    --conteudo-color: #FFFFFF;
-    --titulo-color: #303030;
-}
-  
-/* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
@@ -42,256 +5,213 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: 'Lato', sans-serif;
     list-style: none;
 }
-
-img{
-    max-width: 200px;
-    height: auto;
-}
-
-.inicial{
-    width: 100%;
-}
-
-.topo{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    margin: auto;
-    
-}
-
-.logo{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.menu_navegacao{
-    display: flex;
-    justify-content: flex-end;
-    visibility: hidden;    
-}
-
-.menu_hamburguer img{    
-    width: 50px;
-    height: 50px;
-    
-}
-
-figcaption{
-    visibility: hidden
-}
-
-.secaoDestaque { 
-    width: 100%;      
-    align-items: center;
-    text-align: center;
-    background-color: #00043e;
-}
-
-.secaoDestaqueFormulario{ 
-    padding-bottom: 120px;
-}
-
-.input{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    height: 20px;
-}
-
-
-.colorButton{
-    background-color: #007aff;
-    border: none; 
-    height: 20px;  
-    margin-right: 15px;
-    margin-left: -5px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.conteudoHeader{ 
-       
-    color: var(--conteudo-color);
-    background-color: #00043e;
-    font-weight: 500;
-
-}
-
-.secaoSobre{
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-}
-
-.flex{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.tituloColor{
-    color: var(--titulo-color);
-    text-align: left;
-    font-weight: 600;
-}
-
-.conteudo{
-    width: 100%;
-    color: #303030;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.conteudo2{
-    color: #818181;
-    text-align: left;
-    font-size: 16px;    
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.buttonSubscribe{
-    width: 250px;
-    background-color: #FFFFFF;
-    padding: 10px 30px;
-    border: 0.5px solid #818181;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.flex-col{
-    width: 100%;   
-}
-
-.flex-col:nth-child(2){
-    margin: auto;
-    width: 200px;
-    height: 200px;
-}
-
-
-
-.js figure img{
-    width: 110px;
-    height: 110px;
-}
-.list ul{
-    
-    width: 60%;
-    margin: auto;
-    }
-
-.list ul li{
-    list-style: square;
-    color: #818181;
-    text-align: left;
-}
-
-.list h2 {    
-    margin: 20px 0px;
-}
-
-.js, .list{
-    width: 100%;
-    background-color: #F6F6F6;
-    padding: 15px 0px;
-}
-
 div.flex{
     display: flex;
 }
-
 div.full-container{
-    width: 100%;    
+    width: 100%;
     margin:0 auto;
 }
 div.large-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;    
+    width: 100%;
     margin:0 auto;
 }
-
-
 div.container{
-    width: 100%;    
+    width: 100%;
     margin:0 auto;
 }
-/* GERAL */
-  
-/* HTML */
 html{
     width: 100%;
     text-align: center;
     margin: 0;
 }
-
 h2{
     font-family: 'Montserrat';
 }
-/* HTML */
-  
-/* BODY */
 body{
     width: 100%;
+    font-family: 'Lato';
 }
-/* BODY */
-  
-/* HEADER */
 header{
-    background-color: #00043e;  
+    background-color: #00043E;
 }
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-/* INICIAL */
-main{}
-/* INICIAL */
+header .large-container figure{
+    text-align: left;
+}
 
-/* EXTRAS */
+header .large-container figure img{
+    width: 40%;
+    height: 40%;
+}
 
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+header div nav figure .menu-hamburguer{  
+    
+    width: 40%;
+    height: 40%;
+}
 
-/* EXTRAS */
-  
+header .large-container nav{    
+    width: 20%;
+}
+header .large-container nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    visibility: hidden;
+}
+header .secaoDestaque{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+header .secaoDestaque h2{    
+    margin: 10px 0px;
+    
+}
+header .secaoDestaque p{    
+    margin-bottom: 10px;
+    
+}
+.secaoDestaqueFormulario input{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: -6px;
+    padding-left: 5px;
+    border: none;
+}
 
-/* MEDIA QUERIES */
+.secaoDestaqueFormulario button{
+    color: #FFFFFF;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    background-color: #007aff;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+}
+
+main .secaoSobre{
+    width: 70%;
+    margin: auto;
+}
+main .secaoSobre .flex{
+    padding: 30px 0px;
+}
+main .secaoSobre .flex h2{
+    padding-bottom: 30px;
+    color: #4b4b4b;
+}
+main .secaoSobre .flex p{
+    padding-bottom: 30px;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+main .secaoSobre .flex p:nth-child(3){
+    padding-bottom: 30px;    
+    color: #818181;
+    font-weight: 500;
+}
+
+main .python .flex-col .button button{
+    background-color: #FFFFFF;
+    border: 1px solid #818181;
+}
+
+main .secaoSobre .flex .python .flex-col h2, main .secaoSobre .flex .python .flex-col p{
+    text-align: left;
+    padding-bottom: 30px;
+}
+main .secaoSobre .flex .python .flex-col .button{
+    text-align: left;
+}
+main .secaoSobre .flex .python .flex-col button{
+    width: 70%;
+    height: 50px;
+}
+main .secaoSobre .flex .python .image figure img{
+    width: 40%;
+    margin: 30px 0px;
+}
+main .secaoSobre .flex .javascript{
+    background-color: #F6F6F6;
+    padding: 40px 0px;
+    width: 100%;
+    margin-top: 20px;
+}
+main .secaoSobre .flex .javascript .flex-col figure img{
+    width: 15%;
+}
+main .secaoSobre .flex .javascript .lista ul{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-position: inside;
+    list-style: square;
+}
+figcaption{
+    visibility: hidden;
+}
+
+footer{
+    text-align: center;
+}
     @media screen and (min-width: 400px) {
+    }
+    @media screen and (min-width: 800px) {
+        header div nav ul li{
+            font-size: 13px;            
+        }
+
+        header section .secaoDestaque h2{
+            font-size: 63px;
         
+        }
+
+        header section .secaoDestaque p{
+            font-size: 21px;
+        
+        }
+
+        main .secaoSobre .flex .python {
+            display: flex;
+            flex-direction: row;
+        }
+        main .secaoSobre .flex .python .image figure img{
+            width: 300px;
+        }
+        main .secaoSobre .flex .javascript{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        main .secaoSobre .flex .javascript .flex-col figure img{
+            width: 30%;
+        }
+        main .secaoSobre .flex .python .flex-col button{
+            width: 50%;
+        }
+
+        main .secaoSobre h2{
+            font-size: 24px;
+        }
+
+        main .secaoSobre p{
+            font-size: 19px;
+        }
     }
-  
-    @media screen and (min-width: 800px) {       
-       div.container {
-           border: 1px solid red;          
-           display: flex;
-           flex-direction: row;
-           width: 80vw;                     
-       }
-
-       .menu_navegacao{
-        display: flex;
-        justify-content: flex-end;
-        display: none;   
-    }
-
-       
-
-
-    }
-/* MEDIA QUERIES */
